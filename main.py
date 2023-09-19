@@ -1,9 +1,11 @@
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
-# Example usage
-num = 5
-result = factorial(num)
-print(f"The factorial of {num} is {result}")
+def __init__(self, account_number, account_holder_name, initial_balance=0.0):
+        self.__account_number = account_number
+        self.__account_holder_name = account_holder_name
+        self.__account_balance = initial_balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__account_balance += amount
+            return f"Deposited ${amount}. New balance: ${self.__account_balance}"
+e 
+          
